@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: url('images/index.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .btn i {
+            margin-right: 10px;
+        }
+
+        /* Logout Button */
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="username-display text-black fw-bold" id="username-display" style="position: absolute; top: 20px; left: 20px;">
+        Welcome, <span id="username"></span>!
+    </div>
+
+    <!-- Logout Button -->
+    <a href="login.html" class="btn btn-danger logout-btn"><button id="logout-btn" class="btn btn-danger">Logout</button></a>
+
+    <div class="container text-center">
+        <h2 class="mb-4">Expense Tracker</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="d-grid gap-3">
+                    <a href="user_detail.html" class="btn btn-primary"><i class="fas fa-user"></i> My Detail</a>
+                    <a href="add_income.html" class="btn btn-success"><i class="fas fa-plus-circle"></i> Add Income</a>
+                    <a href="display_income.html" class="btn btn-info"><i class="fas fa-money-bill-wave"></i> Get All Income</a>
+                    <a href="add_expense.html" class="btn btn-danger"><i class="fas fa-shopping-cart"></i> Add Expense</a>
+                    <a href="display_expense.html" class="btn btn-warning"><i class="fas fa-receipt"></i> Get All Expense</a>
+                    <a href="add_budget.html" class="btn btn-dark"><i class="fas fa-wallet"></i> Add Budget</a>
+                    <a href="display_budget.html" class="btn btn-secondary"><i class="fas fa-chart-pie"></i> Get All Budget</a>
+                    <a href="calculate_savings.html" class="btn btn-outline-primary"><i class="fas fa-coins"></i> Calculate Savings</a>
+                    <a href="check_affordability.html" class="btn btn-outline-danger"><i class="fas fa-balance-scale"></i> Check Affordability</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/lock_page.js"></script>
+    <!-- <script>
+        setTimeout(function() {
+            localStorage.removeItem("access_token");
+            alert("Session timeout due to security reasons! Please log in again.");
+            window.location.href = "login.html";
+        }, 10000); 
+    </script> -->
+    <script src="js/logout.js"></script>
+    <script src="js/time_out.js"></script>
+        
+</body>
+</html>

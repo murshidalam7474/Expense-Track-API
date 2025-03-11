@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <button class="btn btn-secondary mb-3" onclick="goBack()">← Back</button>
+        <h2 class="text-center">My Details</h2>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title" id="username">Username: Loading...</h5>
+                <p class="card-text"><strong>Total Income:</strong> <span id="totalIncome">0</span></p>
+                <p class="card-text"><strong>Total Expense:</strong> <span id="totalExpense">0</span></p>
+                <p class="card-text"><strong>Total Budget:</strong> <span id="totalBudget">0</span></p>
+                <p class="card-text"><strong>Balance:</strong> <span id="balance">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/my_details.js"></script>
+    <script src="js/back_button.js"></script>
+</body>
+</html>
