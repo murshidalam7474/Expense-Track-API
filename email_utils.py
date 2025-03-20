@@ -3,9 +3,9 @@ import os
 
 # Update the configuration to match FastAPI-Mail's requirements
 conf = ConnectionConfig(
-    MAIL_USERNAME=os.getenv("MAIL_USERNAME", "shamaalam7474@gmail.com"),
-    MAIL_PASSWORD=os.getenv("MAIL_PASSWORD", "jchi yuyg zqez fsld"),
-    MAIL_FROM=os.getenv("MAIL_FROM", "shamaalam7474@gmail.com"),
+    MAIL_USERNAME=os.getenv("MAIL_USERNAME", "example@gmail.com"),
+    MAIL_PASSWORD=os.getenv("MAIL_PASSWORD", "abcd efg hijkl mno"),
+    MAIL_FROM=os.getenv("MAIL_FROM", "example@gmail.com"),
     MAIL_PORT=int(os.getenv("MAIL_PORT", 587)),
     MAIL_SERVER=os.getenv("MAIL_SERVER", "smtp.gmail.com"),
     MAIL_STARTTLS=bool(os.getenv("MAIL_STARTTLS", True)),  # Corrected field name
